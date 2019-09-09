@@ -1,6 +1,8 @@
 <?php
 
   header('Content-type: application/json');
+  $autorkey=$_GET['autore'];
+
   $arralbum = [
     [
       'name' => 'New-Jersey',
@@ -58,11 +60,21 @@
     ],
     [
       'name' => 'Bad',
-      'author' => 'Michael Jacjson',
+      'author' => 'Michael Jackson',
       'year' => 1987,
       'poster_path' =>'https://m.media-amazon.com/images/I/71K9CbNZPsL._SS500_.jpg'
     ]
   ];
+  if ($autorkey === "All"){
+    echo json_encode($arralbum);
+  }else{
+  $arrauthorres=[];
 
-  echo json_encode($arralbum);
+  foreach ($arralbum as $key ) {
+    if($key['author'] === $autorkey){
+      $arrauthorres []=$key;
+    }
+  }
+  echo json_encode($arrauthorres);
+  }
 ?>

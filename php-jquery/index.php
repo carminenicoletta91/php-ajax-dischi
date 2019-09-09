@@ -25,6 +25,19 @@
     <title></title>
   </head>
   <body>
+    <select id="autor-select" >
+      <option value="All" >All</option>
+      <option value="Queen">Queen</option>
+      <option value="Sting">Sting</option>
+      <option value="Steve Gadd Band">Steve Gadd Band</option>
+      <option value="Bon Jovi">Bon Jovi</option>
+      <option value="Iron Maiden">Iron Maiden</option>
+      <option value="Eric Clapton">Eric Clapton</option>
+      <option value="Deep Purple">Deep Purple</option>
+      <option value="Metallica">Metallica</option>
+      <option value="Dave Weckl">Dave Weckl</option>
+      <option value="Michael Jackson">Michael Jackson</option>
+    </select>
     <div class="album">
 
     </div>
@@ -36,7 +49,7 @@
       <div class="element" >
         <div class='image-album'>
           <img src='{{{poster_path}}}'>
-        </div>  
+        </div>
         <div class="element-in">
           <h2>{{{nome_album}}}</h2>
           <p> {{{autore}}}</p>
