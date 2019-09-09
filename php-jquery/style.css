@@ -1,0 +1,40 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.album {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+.element{
+  border-radius: 50%;
+  width:400px;
+  height:400px;
+  background:rgb(46, 58, 70);
+  padding:20px 20px;
+  margin:20px;
+}
+.image-album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:40%;
+}
+.image-album img{
+  width:60%;
+  height:100%;
+  border-radius:50%;
+}
+.element-in{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width:100%;
+  height:60%;
+  color:orange;
+  
+}
